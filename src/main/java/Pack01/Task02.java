@@ -1,3 +1,5 @@
+package Pack01;
+
 import java.util.*;
 
 public class Task02 {

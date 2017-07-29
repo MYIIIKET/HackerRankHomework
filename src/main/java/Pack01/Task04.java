@@ -1,3 +1,5 @@
+package Pack01;
+
 public class Task04 {
     private static class Node {
         int data;
