@@ -11,10 +11,8 @@ public class Task01 {
         int k = in.nextInt();
         int a[] = new int[n];
         for (int a_i = 0; a_i < n; a_i++) {
-            a[a_i] = in.nextInt();
+            a[Math.floorMod(a_i - k, n)] = in.nextInt();
         }
-        List<Integer> list = IntStream.of(a).boxed().collect(Collectors.toList());
-        Collections.rotate(list, -k);
-        list.forEach(integer -> System.out.print(integer + " "));
+        Arrays.stream(a).forEach(value -> System.out.print(value + " "));
     }
 }
